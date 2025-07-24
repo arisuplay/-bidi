@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ari sayang Bidi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      background: linear-gradient(120deg, #f6dfff 0%, #c6e6fa 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .card {
+      background: rgba(255,255,255,0.92);
+      border-radius: 22px;
+      box-shadow: 0 6px 36px 0 #bdb1dd33, 0 1.5px 12px #bdb1dd22;
+      padding: 36px 26px 26px 26px;
+      text-align: center;
+      max-width: 360px;
+      width: 97vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card img {
+      width: 175px;
+      height: 235px;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: 0 6px 24px #bdb1dd55;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+    }
+    .judul {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.7rem;
+      color: #6a308f;
+      margin-bottom: 7px;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+    .subjudul {
+      font-size: 1.15rem;
+      color: #444;
+      font-weight: 600;
+      margin-bottom: 18px;
+      letter-spacing: 0.4px;
+    }
+    .pesan {
+      color: #593679;
+      font-size: 1.01rem;
+      font-weight: 500;
+      background: #ede5fa;
+      border-radius: 11px;
+      padding: 11px 13px;
+      margin-bottom: 5px;
+      letter-spacing: 0.05rem;
+    }
+    @media (max-width: 520px) {
+      .card {
+        padding: 19px 3vw 18px 3vw;
+        max-width:99vw;
+      }
+      .card img { width: 62vw; height: 37vw; max-width:165px; max-height:210px;}
+      .judul { font-size: 1.1rem;}
+      .pesan { font-size: 0.93rem;}
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="8255b754-cfdf-4399-b64b-4b2557d20dd0.jpg" alt="Ari & Bidi">
+    <div class="judul">Ari sayang Bidi</div>
+    <div class="subjudul">I love you, Bidi.</div>
+    <div class="pesan">
+      Terima kasih sudah bersama dan saling percaya.<br>
+      Semoga kita terus berjalan berdua, saling mendukung dan menjaga.
+    </div>
+  </div>
+</body>
+</html>
