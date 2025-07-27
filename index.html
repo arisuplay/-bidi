@@ -1,139 +1,163 @@
-1&playlist=msGuqelopMA&controls=1"
-      frameborder="0" allow="autoplay"></iframe>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pertanyaan & Jawaban Interview Pertamina</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #ffffff;
+      color: #333;
+    }
+    header {
+      background: #ffffff;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #d61c4e;
+      transition: width .3s;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    .hero {
+      background: url('https://i.imgur.com/7eS7QV3.jpeg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .hero h1 {
+      background: rgba(0,0,0,0.5);
+      padding: 20px 30px;
+      border-radius: 8px;
+      font-size: 28px;
+      animation: slideDown 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: white;
+      padding: 35px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    h2 {
+      color: #d61c4e;
+      border-bottom: 3px solid #f77f00;
+      padding-bottom: 6px;
+    }
+    .qna {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-left: 5px solid #f77f00;
+      background: #fafafa;
+      border-radius: 6px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .qna:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+    .question {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .answer {
+      margin-top: 6px;
+    }
+    footer {
+      text-align: center;
+      background: #d61c4e;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+      font-weight: bold;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://ppl-pertamina.com/img/logo.png" alt="Logo Pertamina">
+    <nav>
+      <a href="#hc">HC Questions</a>
+      <a href="#user">User Questions</a>
+      <a href="#pis">PIS Questions</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Pertanyaan & Jawaban Interview Pertamina</h1>
   </div>
 
-  <!-- Confetti -->
-  <canvas class="confetti" id="confetti" style="display:none"></canvas>
+  <div class="container" id="hc">
+    <h2>Pertanyaan dari HC (Human Capital)</h2>
+    <div class="qna"><div class="question">1. Ceritakan tentang diri Anda dan motivasi melamar di Pertamina!</div><div class="answer">Saya lulusan Pendidikan Bahasa Inggris yang memiliki pengalaman di digital marketing dan komunikasi. Saya melamar di Pertamina karena ingin berkontribusi di perusahaan energi terbesar di Indonesia sekaligus mengembangkan kemampuan saya.</div></div>
+    <div class="qna"><div class="question">2. Bagaimana cara Anda beradaptasi di lingkungan baru?</div><div class="answer">Saya selalu memulai dengan mengenal budaya kerja, bertanya kepada rekan yang lebih berpengalaman, dan aktif mencari masukan agar bisa cepat belajar dan beradaptasi.</div></div>
+    <div class="qna"><div class="question">3. Jika ditempatkan di divisi yang bukan pilihan utama, apa sikap Anda?</div><div class="answer">Saya akan melihatnya sebagai peluang belajar hal baru dan memberikan kontribusi terbaik di bidang tersebut. Saya percaya setiap pengalaman akan memperkaya kemampuan saya.</div></div>
+    <div class="qna"><div class="question">4. Apa arti profesionalisme bagi Anda?</div><div class="answer">Profesionalisme adalah menjalankan tugas dengan integritas, disiplin, dan rasa tanggung jawab penuh, serta menghormati rekan kerja dan budaya perusahaan.</div></div>
+  </div>
 
-  <!-- SCRIPT -->
-  <script>
-    // Modal Opening
-    function openUndangan() {
-      document.getElementById('modalOpen').style.display='none';
-      setTimeout(()=>window.scrollTo(0,0),100);
-    }
+  <div class="container" id="user">
+    <h2>Pertanyaan dari User (Divisi/Calon Atasan)</h2>
+    <div class="qna"><div class="question">1. Keahlian apa yang Anda miliki dan bisa bermanfaat untuk Pertamina?</div><div class="answer">Saya memiliki kemampuan komunikasi yang kuat, pembuatan konten kreatif, dan pengalaman di digital marketing. Keterampilan ini dapat membantu Pertamina dalam meningkatkan branding dan komunikasi dengan publik.</div></div>
+    <div class="qna"><div class="question">2. Menurut Anda, tantangan utama industri energi ke depan apa?</div><div class="answer">Tantangan utamanya adalah transisi ke energi ramah lingkungan dan menjaga kepercayaan publik. Saya siap membantu melalui ide-ide konten yang edukatif dan menarik agar publik lebih memahami peran Pertamina.</div></div>
+    <div class="qna"><div class="question">3. Jika membuat konten untuk Pertamina, ide apa yang akan Anda buat?</div><div class="answer">Saya akan membuat konten edukasi dan storytelling, seperti video pendek tentang peran Pertamina dalam transisi energi, kisah inspiratif karyawan, dan behind-the-scenes proses kerja untuk membangun kedekatan dengan masyarakat.</div></div>
+    <div class="qna"><div class="question">4. Bagaimana Anda melihat diri Anda berkembang di Pertamina dalam 5 tahun ke depan?</div><div class="answer">Saya ingin menjadi profesional yang memiliki keahlian mendalam di bidang komunikasi dan digital, dipercaya menangani proyek besar, dan memberi kontribusi nyata bagi perusahaan.</div></div>
+    <div class="qna"><div class="question">5. Jika ditanya ekspektasi gaji, bagaimana Anda menjawab?</div><div class="answer">Saya lebih memprioritaskan kesempatan belajar dan berkembang di Pertamina. Namun, saya berharap mendapat kompensasi sesuai standar perusahaan dan tanggung jawab pekerjaan, dan saya terbuka mengikuti kebijakan gaji yang berlaku.</div></div>
+  </div>
 
-    // Countdown Hari H
-    function countdown() {
-      var target = new Date("2025-08-31T09:00:00+07:00");
-      var now = new Date();
-      var selisih = target-now;
-      if(selisih<0) {document.getElementById("countdown").innerHTML="Hari Bahagia Telah Tiba!";return;}
-      var hari = Math.floor(selisih/(1000*60*60*24));
-      var jam = Math.floor((selisih/(1000*60*60))%24);
-      var menit = Math.floor((selisih/(1000*60))%60);
-      var detik = Math.floor((selisih/1000)%60);
-      document.getElementById("countdown").innerHTML=`${hari} Hari ${jam} Jam ${menit} Menit ${detik} Detik`;
-      setTimeout(countdown,1000);
-    }
-    countdown();
+  <div class="container" id="pis">
+    <h2>Pertanyaan Khusus Pertamina International Shipping</h2>
+    <div class="qna"><div class="question">1. Apa yang Anda ketahui tentang Pertamina International Shipping dan perannya?</div><div class="answer">Pertamina International Shipping adalah anak usaha Pertamina yang mengelola armada kapal untuk distribusi energi. Perannya penting untuk mendukung pasokan energi nasional maupun internasional.</div></div>
+    <div class="qna"><div class="question">2. Menurut Anda, tantangan utama dalam industri shipping migas apa?</div><div class="answer">Tantangan utamanya adalah jadwal pengiriman yang ketat, keselamatan kerja, dan kepatuhan terhadap regulasi internasional. Komunikasi dan koordinasi yang baik adalah kunci mengatasinya.</div></div>
+    <div class="qna"><div class="question">3. Jika Anda harus bekerja di lingkungan multikultural, bagaimana cara membangun komunikasi efektif?</div><div class="answer">Saya akan menggunakan komunikasi yang jelas, menghargai budaya berbeda, serta membangun hubungan kerja yang saling menghormati.</div></div>
+  </div>
 
-    // Gallery nav
-    let gIdx = 0;
-    const gImgs = [
-      "https://i.imgur.com/7eS7QV3.jpeg",
-      "https://i.imgur.com/vAIxswA.jpg",
-      "https://i.imgur.com/27y42Vn.jpg"
-    ];
-    function galleryNav(d) {
-      gIdx = (gIdx + d + gImgs.length) % gImgs.length;
-      for(let i=0;i<gImgs.length;i++){
-        document.getElementById('galleryImg'+i).classList.remove('active');
-        document.getElementById('galleryImg'+i).src = gImgs[i];
-      }
-      document.getElementById('galleryImg'+gIdx).classList.add('active');
-    }
-
-    // RSVP
-    let rsvpData = [];
-    function addRSVP() {
-      let nama = document.getElementById('rsvpNama').value.trim();
-      let ucapan = document.getElementById('rsvpUcapan').value.trim();
-      if(!nama || !ucapan) return alert("Isi nama & ucapan!");
-      rsvpData.unshift({nama, ucapan});
-      document.getElementById('rsvpNama').value = "";
-      document.getElementById('rsvpUcapan').value = "";
-      showRSVP();
-    }
-    function showRSVP() {
-      let html = rsvpData.map(x=>`<div class="rsvp-item"><b>${x.nama}</b>: ${x.ucapan}</div>`).join('');
-      document.getElementById('rsvpList').innerHTML = html;
-    }
-
-    // Confetti Gold
-    function showConfetti() {
-      const confetti = document.getElementById('confetti');
-      confetti.style.display='block';
-      confetti.width = window.innerWidth;
-      confetti.height = window.innerHeight;
-      const cctx = confetti.getContext('2d');
-      let particles = [];
-      for(let i=0;i<40;i++){
-        let angle = 2*Math.PI*(i/40);
-        let speed = 7+Math.random()*2.5;
-        particles.push({
-          x: confetti.width/2, y: confetti.height/2-60,
-          vx: Math.cos(angle)*speed, vy: Math.sin(angle)*speed,
-          alpha: 1, color: i%2==0?"#f2be69":"#fff6d3", emoji: i%3==0?"💛":"✨"
-        });
-      }
-      function animateConfetti() {
-        cctx.clearRect(0,0,confetti.width,confetti.height);
-        particles.forEach(p=>{
-          if(p.alpha<=0) return;
-          cctx.save();
-          cctx.globalAlpha = p.alpha;
-          cctx.font = "32px serif";
-          cctx.shadowColor = p.color;
-          cctx.shadowBlur = 10;
-          cctx.fillText(p.emoji, p.x, p.y);
-          cctx.restore();
-          p.x += p.vx; p.y += p.vy;
-          p.vy += 0.19;
-          p.alpha -= 0.014+Math.random()*0.009;
-        });
-        particles = particles.filter(p=>p.alpha>0);
-        if(particles.length>0) requestAnimationFrame(animateConfetti);
-        else setTimeout(()=>confetti.style.display='none',350);
-      }
-      animateConfetti();
-    }
-
-    // BOKEH / GOLD PARTICLE BACKGROUND
-    const bokeh = document.getElementById('bokeh');
-    const bctx = bokeh.getContext('2d');
-    function resizeBokeh(){bokeh.width=window.innerWidth;bokeh.height=window.innerHeight;}
-    window.addEventListener('resize',resizeBokeh);resizeBokeh();
-    let bokehArr=[];
-    for(let i=0;i<23;i++){
-      bokehArr.push({
-        x:Math.random()*bokeh.width,
-        y:Math.random()*bokeh.height,
-        r:30+Math.random()*30,
-        alpha:0.11+Math.random()*0.12,
-        dx:(Math.random()-.5)*.4,
-        dy:(Math.random()-.5)*.25,
-        color:`rgba(${210+Math.floor(Math.random()*30)},${186+Math.floor(Math.random()*48)},110,1)`
-      });
-    }
-    function drawBokeh(){
-      bctx.clearRect(0,0,bokeh.width,bokeh.height);
-      for(const b of bokehArr){
-        bctx.beginPath();
-        bctx.arc(b.x,b.y,b.r,0,2*Math.PI);
-        bctx.fillStyle = b.color;
-        bctx.globalAlpha = b.alpha;
-        bctx.fill();
-        b.x+=b.dx; b.y+=b.dy;
-        if(b.x<-50) b.x = bokeh.width+40;
-        if(b.x>bokeh.width+50) b.x = -40;
-        if(b.y<-40) b.y = bokeh.height+50;
-        if(b.y>bokeh.height+60) b.y = -40;
-      }
-      bctx.globalAlpha=1;
-      requestAnimationFrame(drawBokeh);
-    }
-    drawBokeh();
-  </script>
+  <footer>
+    Good luck bidiku sayang ❤️ i love youu :p
+  </footer>
 </body>
 </html>
